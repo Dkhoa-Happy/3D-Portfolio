@@ -1,25 +1,63 @@
+import {FileSearch, TerminalSquare, Layout, Gauge, Home, Info, Code, Mail} from 'lucide-react'
+
 export const navLinks = [
     {
         id: 1,
         name: 'Home',
         href: '#home',
+        icon: Home
     },
     {
         id: 2,
         name: 'About',
         href: '#about',
+        icon: Info
     },
     {
         id: 3,
         name: 'Work',
         href: '#work',
+        icon: Code
     },
     {
         id: 4,
         name: 'Contact',
         href: '#contact',
+        icon: Mail
     },
 ];
+
+export const workflowSteps = [
+    {
+        id: 1,
+        title: "Analyzing Requirements",
+        description: "Review requirements from the design (UI/UX) and project management teams. Break down the interface into components and understand user interactions.",
+        example: "Examine designs in Figma/Adobe XD to fully understand layouts and element behaviors.",
+        icon: FileSearch
+    },
+    {
+        id: 2,
+        title: "Setting Up the Development Environment",
+        description: "Initialize projects using frameworks like React.js or Next.js. Utilize Git/GitHub for source code management and team collaboration. Configure ESLint, Prettier to maintain clean and standardized code.",
+        example: "Tools: React.js, Next.js, Git/GitHub, ESLint, Prettier",
+        icon: TerminalSquare
+    },
+    {
+        id: 3,
+        title: "Building the User Interface (UI)",
+        description: "Convert static designs into interactive and dynamic user interfaces. Break the UI into reusable components. Build responsive designs to ensure compatibility across desktops, tablets, and mobile devices.",
+        example: "Technologies: HTML/CSS/JavaScript, TailwindCSS/Chakra UI/Shadcn UI",
+        icon: Layout
+    },
+    {
+        id: 4,
+        title: "Optimizing Performance",
+        description: "Ensure fast load times and smooth performance across all devices. Optimize images using formats like WebP/AVIF. Implement lazy loading for non-critical components.",
+        example: "Use tools like Google Lighthouse or WebPageTest to analyze and improve performance.",
+        icon: Gauge
+    }
+];
+
 
 export const clientReviews = [
     {
@@ -267,29 +305,29 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
-        name: 'Framer',
-        pos: 'Lead Web Developer',
-        duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: '/assets/framer.svg',
+        name: 'Freelance Projects',
+        pos: 'Junior Front-end Developer',
+        duration: '2023 - Present',
+        title: "Built small-scale web applications for friends and local businesses using React.js. Focused on creating responsive interfaces, reusable components, and state management using Context API and React Hooks.",
+        icon: '/assets/freelance.png',
         animation: 'victory',
     },
     {
         id: 2,
-        name: 'Figma',
-        pos: 'Web Developer',
-        duration: '2020 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: '/assets/figma.svg',
+        name: 'FPT University Projects',
+        pos: 'React Developer - KoiNe',
+        duration: '10/2024 - 11/2022',
+        title: "Worked with classmates to develop web applications as part of coursework. Implemented features like dynamic routing, form validation, and API integration. Learned to collaborate using Git and GitHub effectively.",
+        icon: '/assets/logo.png',
         animation: 'clapping',
     },
     {
         id: 3,
-        name: 'Notion',
-        pos: 'Junior Web Developer',
-        duration: '2019 - 2020',
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-        icon: '/assets/notion.svg',
+        name: 'Self-Learning & Practice',
+        pos: 'React Learner',
+        duration: '2022 - Present',
+        title: "Completed multiple online courses on platforms like Udemy and freeCodeCamp. Gained experience with tools like TailwindCSS, React Router, and TypeScript through building personal projects such as a Todo App and a Portfolio Website.",
+        icon: '/assets/selfstudy.png',
         animation: 'salute',
     },
 ];
